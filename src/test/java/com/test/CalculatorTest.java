@@ -16,7 +16,7 @@ public class CalculatorTest {
 
 	@Test
 	public void testAdd() {
-		AssertJUnit.assertEquals(6, calculator.add(2, 3));
+		AssertJUnit.assertEquals(5, calculator.add(2, 3));
 	}
 
 	@Test
@@ -40,6 +40,6 @@ public class CalculatorTest {
 	}
 
 	// Add more test cases as needed
-	 //Edit these files for Testing
-	//Edit these files for Testing - Saran
+	// Feature-3 Update
+
 }

@@ -39,13 +39,6 @@ public class CalculatorTest {
 		calculator.divide(10, 0);
 	}
 
-	// Add more test cases as needed
-	// Feature-3 Update
-	// Feature-3 Update2
-	// Main Update1
-	//Main Update 3
-	//Main Update 4
-	//Main update 5
-	//Update CI Workflow 1
+//Update ONE
 
 }

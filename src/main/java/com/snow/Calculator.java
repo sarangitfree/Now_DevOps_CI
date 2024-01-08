@@ -18,12 +18,6 @@ public class Calculator {
         }
         return a / b;
 
-        //Feature-3 Update
-        //Feature-3 Update2
-        //Main Update 1
-        //Main Update 2
-        //Main Update 3
-        //Main Update 4
-        //Main update 5
+//Update ONE
     }
 }

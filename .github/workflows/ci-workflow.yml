@@ -60,4 +60,4 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Artifact'
-          artifacts: '[{"name": "saran-test-app-devops.jar","version": "05f05ecfcae18a883003f5b4e462d5ec3f0d1145","semanticVersion": "05f05ecfcae18a883003f5b4e462d5ec3f0d1145.0","repositoryName": "${{ github.repository }}"}]'
+          artifacts: '[{"name": "saran-test-app-devops.jar","version": "05f05ec","semanticVersion": "05f05ec.0","repositoryName": "${{ github.repository }}"}]'

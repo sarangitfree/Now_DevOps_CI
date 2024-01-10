@@ -60,7 +60,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Artifact'
-          artifacts: '[{"name": "saran-test-app-devops-chg-${{ github.run_number }}": "3.${{ github.run_number }}","semanticVersion": "3.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
+          artifacts: '[{"name": "saran-test-app-devops-chg-${{ github.run_number }}.jar","version": "3.${{ github.run_number }}","semanticVersion": "3.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
 
 
   registerpackage:

@@ -22,7 +22,5 @@ public class Calculator {
         return a / b;
         //Update Four
 
-//Update ONE
-//Update Two
     }
 }

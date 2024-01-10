@@ -62,19 +62,3 @@ jobs:
           job-name: 'Register Artifact'
           artifacts: '[{"name": "saran-test-app-devops-chg-${{ github.run_number }}.jar","version": "3.${{ github.run_number }}","semanticVersion": "3.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
 
-
-  registerpackage:
-    name: Register Package
-    needs: registerartifact
-    runs-on: ubuntu-latest
-    steps:
-      - name: ServiceNow Register Package 1
-        uses: ServiceNow/servicenow-devops-register-package@v2.0.0
-        with:
-          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
-          instance-url: ${{ secrets.SN_INSTANCE_URL }}
-          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
-          context-github: ${{ toJSON(github) }}
-          job-name: 'Register Package'
-          artifacts: '[{"name": "saran-test-app-devops-chg-${{ github.run_number }}.jar","version": "3.${{ github.run_number }}","semanticVersion": "3.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
-          package-name: 'saran-test-app-devops-chg-velo-${{ github.run_number }}.war'

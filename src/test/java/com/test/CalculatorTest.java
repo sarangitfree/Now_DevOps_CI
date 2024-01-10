@@ -21,7 +21,7 @@ public class CalculatorTest {
 
 	@Test
 	public void testSubtract() {
-		AssertJUnit.assertEquals(2, calculator.subtract(5, 3));
+		AssertJUnit.assertEquals(2, calculator.subtract(3, 3));
 	}
 
 	@Test

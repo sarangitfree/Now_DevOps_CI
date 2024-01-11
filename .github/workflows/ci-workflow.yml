@@ -49,7 +49,6 @@ jobs:
           
   registerartifact:
     name: Register Artifact
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: ServiceNow Register Artifact
